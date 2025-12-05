@@ -14,7 +14,7 @@
 	padding-left: 2%;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	color: rgba(146,146,146,1.00);
+	color: rgba(0,0,0,1.00);
 }
 #mainwrapper header nav {
 	/*Nav bar containing links in header */
@@ -32,23 +32,23 @@ header nav a {
 }
 #content #mainContent h1, #content #mainContent h2 {
 	/* Styling for main headings */
-	color: rgba(146,146,146,1.00);
+	color: rgba(0,0,0,1.00);
 }
 #content #mainContent h3 {
 	/*Captions ot Taglines */
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
-	color: rgba(146,146,146,1.00);
+	color: rgba(0,0,0,1.00);
 }
 #content #mainContent #bannerImage {
 	/*Container for main banner image */
-	width: 31%;
+	width: 61%;
 	background-color: rgba(208,207,207,1.00);
 }
 #content #mainContent p {
 	/* All paragraphs under maincontent */
-	color: rgba(146,146,146,1.00);
+	color: rgba(0,0,0,1.00);
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
 	font-weight: 200;
@@ -111,7 +111,7 @@ footer article h3 {
 #mainwrapper {
 	/* Container of all content */
 	width: 80%;
-	overflow: auto;
+	/* [disabled]overflow: auto; */
 	margin-left: 10%;
 }
 #content #sidebar input {
@@ -141,7 +141,7 @@ nav ul li a {
 }
 #footerbar {
 	/* Footer bar at the bottom of the page */
-	height: 18px;
+	height: 1%;
 	clear: both;
 	background-color: rgba(208,207,207,1.00);
 	width: 100%;
@@ -167,7 +167,7 @@ footer {
 }
 #mainwrapper header nav a {
 	/* Links in header */
-	color: rgba(146,146,146,1.00);
+	color: rgba(0,0,0,1.00);
 	text-decoration: none;
 }
 
@@ -300,4 +300,25 @@ footer {
 #blankEndInfo {
 	font-weight: bold;
 	font-size: x-large;
+}
+.animated-search {
+  transition: width 0.4s ease;
+  width: 100px;
+}
+
+.animated-search .search-field {
+  transition: all 0.4s ease;
+}
+
+.animated-search:focus-within {
+  width: 200px;
+}
+
+.search-field:focus {
+  box-shadow: 0 0 8px rgba(0, 255, 150, 0.6);
+	border-color: #28a745;}
+.warning {
+	background-color: rgba(255,158,0,0.35);
+	border: 5px solid orange;
+	color: black;
 }
